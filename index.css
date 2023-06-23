@@ -1,0 +1,285 @@
+:root {
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza: #8c8c8c;
+    --cinzaEscuro: #696969;
+    --margin-bottom: 10rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}
+
+.footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 3rem 0rem;
+    width: 100%;
+}
+
+button {
+    background-color: var(--branco);
+    padding: 0.5rem 2rem;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid var(--preto);
+}
+
+button:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.banner {
+    width: 100%;
+    height: 40rem;
+    margin-bottom: var(--margin-bottom);
+    background-image: url(images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+.banner-assunto {
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid white;
+    width: 50%;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.anuncio {
+    margin-bottom: var(--margin-bottom);
+}
+
+.nossas-criacoes {
+    margin-bottom: var(--margin-bottom);
+}
+
+.nossas-criacoes-titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nossas-criacoes-galeria {
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    column-gap: 4%;
+    row-gap: 4%;
+}
+
+.criacao {
+    display: flex;
+    align-items: end;
+    padding: 2rem;
+    width: 100%;
+    background-color: red;
+    height: 30rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--branco);
+    text-transform: uppercase;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.criacao:hover {
+    filter: opacity(0.3);
+    color: var(--preto);
+}
+
+.terra {
+    background-image: url(images/desktop/image-deep-earth.jpg);
+}
+
+.arcade {
+    background-image: url(images/desktop/image-night-arcade.jpg);
+}
+
+.futebol {
+    background-image: url(images/desktop/image-soccer-team.jpg);
+}
+
+.grid {
+    background-image: url(images/desktop/image-grid.jpg);
+}
+
+.upvr {
+    background-image: url(images/desktop/image-from-above.jpg);
+}
+
+.borealis {
+    background-image: url(images/desktop/image-pocket-borealis.jpg);
+}
+
+.curiosity {
+    background-image: url(images/desktop/image-curiosity.jpg);
+}
+
+.fisheye {
+    background-image: url(images/desktop/image-fisheye.jpg);
+}
+
+.titulo {
+    font-weight: 600;
+}
+
+.titulo-2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.icones img {
+    margin-left: 1rem;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.criacao p {
+    font-size: 25px;
+}
+
+.footer-links,
+.anuncio-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-direitos {
+    opacity: 0.5;
+}
+
+.anuncio-imagem {
+    content: url(images/desktop/image-interactive.jpg);
+}
+
+.anuncio-texto {
+    padding: 2rem;
+    width: 50%;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -12rem;
+    background: var(--branco);
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --margin-bottom: 6rem;
+    }
+
+    .banner {
+        background-image: url(images/mobile/image-hero.jpg);
+    }
+
+    .anuncio-texto {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .anuncio-imagem {
+        width: 100%;
+        content: url(images/mobile/image-interactive.jpg);
+    }
+
+    .banner-assunto {
+        font-size: 30px;
+        width: 100%;
+        padding: 2rem;
+        margin-top: 5rem;
+    }
+
+    .nossas-criacoes-galeria {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 4%;
+    }
+
+    .nossas-criacoes-titulo {
+        justify-content: center;
+    }
+
+    .nossas-criacoes-titulo button {
+        display: none;
+    }
+
+    .criacao {
+        width: 100%;
+        height: 7rem;
+        padding: 0rem 2rem;
+    }
+
+    .terra {
+        background-image: url(images/mobile/image-deep-earth.jpg);
+    }
+
+    .arcade {
+        background-image: url(images/mobile/image-night-arcade.jpg);
+    }
+
+    .futebol {
+        background-image: url(images/mobile/image-soccer-team.jpg);
+    }
+
+    .grid {
+        background-image: url(images/mobile/image-grid.jpg);
+    }
+
+    .upvr {
+        background-image: url(images/mobile/image-from-above.jpg);
+    }
+
+    .borealis {
+        background-image: url(images/mobile/image-pocket-borealis.jpg);
+    }
+
+    .curiosity {
+        background-image: url(images/mobile/image-curiosity.jpg);
+    }
+
+    .fisheye {
+        background-image: url(images/mobile/image-fisheye.jpg);
+    }
+
+    .anuncio-links {
+        display: none;
+    }
+
+    .footer {
+        margin-top: 20rem;
+    }
+
+    .footer-links {
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .footer-direitos {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
